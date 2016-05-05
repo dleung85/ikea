@@ -1,0 +1,421 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;   
+}
+
+body {
+	margin:0;
+	font-family: Corbel, san-serif;
+	font-size:18px;
+	color:#5C5E67;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+nav {
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index: 9999;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:800;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+p {
+	margin:0 0 20px 0;
+}
+
+h3 {
+	font-size:1.25em;
+}
+
+a, a:visited, a:active {
+	color:#005AA9;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#003E74;
+}
+
+button {
+	padding:20px;
+	background:#005AA9;
+	font-family: Corbel, san-serif;
+	font-size:1em;
+	color:#ffffff;
+	border:none;
+}
+
+button:hover {
+	background:#004E92;
+}
+
+#logobar {
+	background:url(../imgs/ikea_logo.png) no-repeat center center #005AA9;
+	padding:10px 20px;
+}
+
+#logobar a {
+	padding: 0 20px 0  0;
+}
+
+#logobar a:last-child {
+	padding: 0;
+}
+
+#logo {
+	text-align: center;
+	display:inline;
+	overflow:auto;
+}
+
+#profile {
+	float:left;
+	display:inline;
+	overflow:auto;
+}
+
+#cart {
+	float:right;
+	display:inline;
+	overflow:auto;
+}
+
+.subnav {
+	background:#E7EBEF;
+	padding:15px;
+	width:100%;
+	display:inline-block;
+}
+
+.subnav ul {
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+.subnav li {
+	display:inline;
+	padding: 20px;
+	text-transform:uppercase;
+	font-weight:200;
+	font-size:14px;
+}
+
+.subnav li:first-child {
+	display:none;
+}
+
+.subnav li.icon {
+ 	display: none;
+ }
+
+.subnav a {
+	color:#5C5E67;
+}
+
+.subnav a:hover {
+	color:#005AA9;
+}
+
+.categories {
+	font-weight:800;
+}
+
+#masthead {
+	background:url(../imgs/masthead.png) no-repeat center center;
+	background-size:cover;
+	height:650px;
+	width:100%;
+	margin:116px 0 0 0;
+}
+
+#wrapper {
+	margin:0 auto;
+	padding:40px 0;
+	max-width: 960px;
+}
+
+.overlay {
+	position:relative;
+	top:25%;
+	width:80%;
+	margin:0 auto;
+}
+.overlaytext {
+	background:rgba(255, 255, 255, .85);
+	position:relative;
+	padding:40px;
+	width:460px;
+}
+
+.overlaytext h1 {
+	color:#D40139;
+	font-size:50px;
+}
+
+.prod-container {
+	border:1px solid #E7EBEF;
+	margin:15px 0;
+	position:relative;
+
+}
+
+.prod-list {
+	border:1px solid #E7EBEF;
+	margin:15px 2% 15px 0;
+	height:300px;
+	position:relative;
+
+}
+
+.prod-list:last-child {
+	margin:15px 0;
+}
+
+.prod-grid {
+	height:480px;
+	clear:both;
+}
+
+.full-text {
+	width:50%;
+	padding:9%;
+	position: relative;
+	top: 50%;
+}
+
+.full-img {
+	position: absolute;
+	bottom:0;
+	right:0;
+	width:50%;
+    margin-top: -20px;
+}
+
+.products {
+	text-align: center;
+}
+
+.products h2 {
+	font-size:1.75em;
+	color:#EBD45A;
+	padding:30px 0 0 0;
+}
+
+.description {
+	margin:0 0 10px 0;
+}
+
+.price {
+	font-weight:800;
+	font-size:2em;
+}
+
+#grey {
+	background:#E7EBEF;
+	width:100%;
+	padding:40px;
+	display:inline-block;
+}
+
+#email {
+	max-width:960px;
+	margin:0 auto;
+}
+
+.email-icon {
+	padding:5px 2% 0 0;
+}
+
+.email-text {
+	width:50%;	
+}
+
+#darkgrey {
+	background:#5C5E67;
+	width:100%;
+	padding:40px;
+	display:inline-block;
+	color:#ffffff;
+}
+
+#darkgrey a {
+	color:#FFFFFF;
+}
+
+#darkgrey a:hover {
+	color:#D1D1D1;
+}
+
+#darkgrey ul, li {
+	list-style-type:none;
+	padding:0;
+	line-height: 1.5em;
+}
+
+.footerlinks {
+	max-width:960px;
+	margin:0 auto;
+}
+
+.full {
+	width:100%;
+}
+
+.half {
+	width:48%;
+	padding:40px 40px 0 40px;
+}
+.half img {
+	width:100%;
+}
+
+.third {
+	width:32%;
+	padding:40px 0 0 0;
+}
+
+.fourth {
+	width:25%;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.center {
+	text-align: center;
+}
+
+.clear {
+	clear:both;
+}
+
+@media (max-width: 640px) {
+
+	#masthead {
+		height:500px;
+	}
+
+	.subnav {
+		padding:15px 30px
+	}
+
+	.subnav li {
+		display: none;
+	}
+	
+	.subnav li.icon {
+	    display: inline-block;
+	   	padding:0;
+
+	}
+
+	.subnav.responsive {
+		position: relative;
+	}
+
+	.subnav.responsive ul {
+		text-align: left;
+		padding:0;
+	}
+
+	.subnav.responsive li.icon {
+	    text-align: center;
+	    border-bottom:1px solid #CFD0D6;
+	}
+
+	.subnav.responsive li {
+	    float: none;
+	    display: block;
+	    padding:0 0 10px 0;
+	}
+
+	.subnav.responsive li:nth-child(2) {
+	    padding:20px 0 10px 0;
+	}
+
+	#logobar {
+		padding:10px;
+	}
+
+	#logobar a {
+		padding: 0 10px 0 0;
+	}
+
+	#wrapper {
+		padding:0 20px;
+	}
+
+	.full-img {
+		position: relative;
+		margin-top: 0;
+		width:100%;
+		text-align: center;
+	}
+
+	.full-img img {
+		width:70%;
+	}
+
+	.full-text {
+		width:100%;
+	}
+
+	.overlaytext {
+		text-align: center;
+		width:100%;
+	}
+	
+	.overlaytext h1 {
+		font-size:34px;
+	}
+		
+	.half {
+    	padding: 20px 20px 0 20px;
+	}
+
+	.third {
+		width:100%;
+	}
+
+	.prod-list {
+		height:auto;
+	}
+
+	#grey {
+		text-align:center;
+	}
+
+	#email div.right {
+		float:none;
+	}
+
+	.email-text {
+  	  width: 100%;
+	}
+
+	.email-icon {
+		display:none;
+	}
+
+	.footerlinks div.fourth {
+		width:100%;
+		padding:10px 0;
+	}
+
+	#darkgrey ul, li {
+	    padding: 0;
+	}
+}
